@@ -132,6 +132,9 @@
     echo '</div>';
     ?>
     <br>
+    <?php
+      phpinfo();
+    ?>
 
 </body>
 
