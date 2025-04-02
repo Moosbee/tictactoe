@@ -1,0 +1,164 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+h2 {
+  color: darkslategray;
+  font-size: 60px;
+
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+h1 {
+  color: darkslateblue;
+  font-size: 40px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tic {
+  box-sizing: border-box;
+  border: 2.5px solid #000000;
+  background-color: #ffffff;
+}
+
+.tictac {
+  width: 33.33%;
+  height: 33.33%;
+  position: absolute;
+}
+#bilda {
+  top: 0%;
+  left: 0%;
+}
+#bildb {
+  top: 0%;
+  left: 33.33%;
+}
+#bildc {
+  top: 0%;
+  left: 66.66%;
+}
+#bildd {
+  top: 33.33%;
+  left: 0%;
+}
+#bilde {
+  top: 33.33%;
+  left: 33.33%;
+}
+#bildf {
+  top: 33.33%;
+  left: 66.66%;
+}
+#bildg {
+  top: 66.66%;
+  left: 0%;
+}
+#bildh {
+  top: 66.66%;
+  left: 33.33%;
+}
+#bildi {
+  top: 66.66%;
+  left: 66.66%;
+}
+
+@media (min-aspect-ratio: 1/1) {
+  .box {
+    position: relative;
+    width: 90vh;
+    height: 90vh;
+  }
+  .cntent {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  #bildj {
+    top: 33.33%;
+    left: 100%;
+
+    width: 33.33%;
+    height: 33.33%;
+    position: absolute;
+  }
+  #bildk {
+    top: 66.66%;
+    left: 100%;
+
+    display: table;
+
+    width: 33.33%;
+    height: 33.33%;
+    position: absolute;
+  }
+  #bildl {
+    top: 0%;
+    left: 100%;
+
+    width: 33.33%;
+    height: 33.33%;
+    position: absolute;
+  }
+}
+
+/* Maximum aspect ratio */
+@media (max-aspect-ratio: 1/1) {
+  .box {
+    position: relative;
+    max-width: 1000px;
+  }
+
+  .box:after {
+    content: "";
+    display: block;
+    padding-bottom: calc(100%);
+  }
+
+  .cntent {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  #bildj {
+    top: 100%;
+    left: 33.33%;
+
+    width: 33.33%;
+    height: 33.33%;
+    position: absolute;
+  }
+  #bildk {
+    top: 100%;
+    left: 66.66%;
+
+    display: table;
+
+    width: 33.33%;
+    height: 33.33%;
+    position: absolute;
+  }
+  #bildl {
+    top: 100%;
+    left: 0%;
+
+    width: 33.33%;
+    height: 33.33%;
+    position: absolute;
+  }
+}
+@media (aspect-ratio: 1/1) {
+  body {
+    background: rgb(255, 0, 43); /* red */
+  }
+}
